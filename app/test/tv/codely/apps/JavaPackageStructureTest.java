@@ -20,8 +20,11 @@ final class JavaPackageStructureTest {
     void javaPackagesMatchTheirDirectoryStructure() throws IOException {
         List<Path> sourceRoots = Arrays.asList(
             Paths.get("app/main"),
+            Paths.get("app/test"),
             Paths.get("src/mooc/main"),
-            Paths.get("src/shared/main")
+            Paths.get("src/mooc/test"),
+            Paths.get("src/shared/main"),
+            Paths.get("src/shared/test")
         );
 
         for (Path sourceRoot : sourceRoots) {
