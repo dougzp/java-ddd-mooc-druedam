@@ -25,7 +25,7 @@ public final class Course {
         return Objects.hash(id, name, duration);
     }
 
-    public String getId() {
+    public String id() {
         return id;
     }
 
@@ -33,7 +33,7 @@ public final class Course {
         this.id = id;
     }
 
-    public String getName() {
+    public String name() {
         return name;
     }
 
@@ -41,7 +41,7 @@ public final class Course {
         this.name = name;
     }
 
-    public String getDuration() {
+    public String duration() {
         return duration;
     }
 
